@@ -12,7 +12,7 @@ Subsampling of frequent words:
 - they usually provide less info than rare words
 - their vector representation do not change significantly after training on several million examples
 
-Method: each word is sampled by probability
+Method: each word is sampled according to a multinomial distribution, whose weights are proportional to
 
 $P(w_i) = \sqrt{\frac{t}{f(w_i)}}$
 
